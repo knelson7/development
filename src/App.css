@@ -2,9 +2,24 @@
   text-align: center;
 }
 
+.title {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.card {
+  width: 200px;
+  height: 240px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-top: 20px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
