@@ -1,5 +1,5 @@
 import { Component } from "react";
-import moment from 'moment';
+
 import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
 
@@ -20,7 +20,7 @@ class Vote extends Component {
             ChrisCount: 0,
             RobertCount: 0,
             MerylCount: 0,
-            updated: moment()
+           
 		};
 	}
 
@@ -28,7 +28,7 @@ class Vote extends Component {
     this.setState({
       totalVotes: this.state.totalVotes + 1,
       BenCount: this.state.BenCount + 1,
-      updated: moment()
+  
 		});
   }
 
@@ -36,7 +36,7 @@ class Vote extends Component {
     this.setState({
       totalVotes: this.state.totalVotes + 1,
       QuinnCount: this.state.QuinnCount + 1, 
-      updated: moment()
+ 
 		});
   }
 
@@ -44,7 +44,7 @@ class Vote extends Component {
     this.setState({
       totalVotes: this.state.totalVotes + 1,
       DemiCount: this.state.DemiCount + 1,
-      updated: moment()
+   
 		});
   }
 
@@ -52,7 +52,7 @@ class Vote extends Component {
     this.setState({
       totalVotes: this.state.totalVotes + 1,
       TaylorCount: this.state.TaylorCount + 1,
-      updated: moment()
+   
 		});
   }
 
@@ -61,7 +61,7 @@ class Vote extends Component {
     this.setState({
       totalVotes: this.state.totalVotes + 1,
       DavidCount: this.state.DavidCount + 1,
-      updated: moment()
+  
 		});
   }
 
@@ -71,7 +71,7 @@ class Vote extends Component {
     this.setState({
       totalVotes: this.state.totalVotes + 1,
       ChrissyCount: this.state.ChrissyCount + 1,
-      updated: moment()
+     
 		});
   }
 
@@ -81,7 +81,7 @@ class Vote extends Component {
     this.setState({
       totalVotes: this.state.totalVotes + 1,
       KylieCount: this.state.KylieCount + 1,
-      updated: moment()
+    
 		});
   }
 
@@ -90,7 +90,7 @@ class Vote extends Component {
     this.setState({
       totalVotes: this.state.totalVotes + 1,
       LoganCount: this.state.LoganCount + 1,
-      updated: moment()
+  
 		});
   }
 
@@ -99,7 +99,7 @@ class Vote extends Component {
     this.setState({
       totalVotes: this.state.totalVotes + 1,
       JenniferCount: this.state.JenniferCount + 1,
-      updated: moment()
+       
 		});
   }
 
@@ -107,7 +107,7 @@ class Vote extends Component {
     this.setState({
       totalVotes: this.state.totalVotes + 1,
       ChrisCount: this.state.ChrisCount + 1,
-      updated: moment()
+  
 		});
   }
 
@@ -116,7 +116,7 @@ class Vote extends Component {
     this.setState({
       totalVotes: this.state.totalVotes + 1,
       RobertCount: this.state.RobertCount + 1,
-      updated: moment()
+ 
 		});
   }
 
@@ -125,7 +125,7 @@ class Vote extends Component {
     this.setState({
       totalVotes: this.state.totalVotes + 1,
       MerylCount: this.state.MerylCount + 1,
-      updated: moment()
+  
 		});
   }
 
@@ -137,28 +137,22 @@ class Vote extends Component {
           <h2>Results:</h2>
           <p>Total Votes: {this.state.totalVotes}</p>
 
-
           <div style={{display: 'flex', justifyContent: 'space-evenly', paddingBottom: '60px'}}>
             <div class="chunk">
               <p>Votes for Ben Platt: {this.state.BenCount}</p>
               <AwesomeButton onPress={this.handleClick1} type="primary" ripple>Ben Platt</AwesomeButton>
             </div>
             
-
             <div class="chunk">
               <p>Votes for Quinn XCII: {this.state.QuinnCount}</p>
               <AwesomeButton onPress={this.handleClick2} type="primary" ripple>Quinn XCII</AwesomeButton>
             </div>
-
-
             
             <div class="chunk">
               <p>Votes for Demi Lovato: {this.state.DemiCount}</p>
               <AwesomeButton onPress={this.handleClick3} type="primary" ripple>Demi Lovato</AwesomeButton>
             </div>
 
-
-            
             <div class="chunk">
               <p>Votes for Taylor Swift: {this.state.TaylorCount}</p>
               <AwesomeButton onPress={this.handleClick4} type="primary" ripple>Taylor Swift</AwesomeButton>
@@ -167,14 +161,10 @@ class Vote extends Component {
 
           <div style={{display: 'flex', justifyContent: 'space-evenly', paddingBottom: '60px'}}>
 
-
-
             <div class="chunk">
               <p>Votes for David Dobrik: {this.state.DavidCount}</p>
               <AwesomeButton onPress={this.handleClick5} type="primary" ripple>David Dobrik</AwesomeButton>
-
             </div>
-
 
             <div class="chunk">
             <p>Votes for Chrissy Tiegen: {this.state.ChrissyCount}</p>
@@ -195,8 +185,6 @@ class Vote extends Component {
           
           </div>
 
-
-          
           <div style={{display: 'flex', justifyContent: 'space-evenly', paddingBottom: '60px'}}>
 
 
@@ -231,9 +219,7 @@ class Vote extends Component {
 
           </div>
 
-          <br></br>
-          <br></br>
-          <p>Most recent vote submitted on {this.state.updated.toString()}</p>
+ 
     </div>)
   }
 }
